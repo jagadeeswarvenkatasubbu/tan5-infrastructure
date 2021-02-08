@@ -13,3 +13,4 @@ override.tf.json
 *.tfstate.*
 
 crash.log
+**/provider.tf
