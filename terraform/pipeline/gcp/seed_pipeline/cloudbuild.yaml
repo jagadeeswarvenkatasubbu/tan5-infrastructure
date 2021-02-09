@@ -1,5 +1,3 @@
 steps:
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [
-      'echo "hi"'
-    ]
+  - name: 'bash'
+    args: ['echo', 'I am running a bash command']
