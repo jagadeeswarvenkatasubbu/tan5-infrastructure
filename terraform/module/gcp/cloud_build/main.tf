@@ -9,4 +9,5 @@ resource "google_cloudbuild_trigger" "default" {
   name = var.name
 
   filename = var.fileName
+  included_files = var.included_files
 }

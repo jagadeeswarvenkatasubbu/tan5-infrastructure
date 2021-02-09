@@ -12,4 +12,5 @@ inputs = {
   git_branch_name = "main"
   git_repo_name   = "github_jagadeeswarvenkatasubbu_tan5-infrastructure"
   name            = "seedjob"
+  included_files  = ["terraform/pipeline/gcp/seed_pipeline/**"]
 }
