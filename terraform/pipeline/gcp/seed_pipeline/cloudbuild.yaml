@@ -1,6 +1,4 @@
 steps:
-  - name: 'bash'
-    args: ['cd ', 'terraform/pipeline/gcp/jobs']
   - name: 'gcr.io/tan5-management/terragrunt'
-    args: ['terragrunt', 'apply', '--auto-approve']
+    args: ['terragrunt', 'apply', '--auto-approve', '--terragrunt-working-dir', 'terraform/pipeline/gcp/jobs']
 
