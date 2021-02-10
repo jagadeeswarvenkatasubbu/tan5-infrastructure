@@ -1,4 +1,4 @@
-module "28dc" {
+module "twentyeightdc" {
   source = "./../../../module/gcp/cloud_build"
 
   name            = "28dc"
@@ -8,20 +8,20 @@ module "28dc" {
   fileName        = "cloudbuild.yaml"
 }
 
-module "48dc" {
+module "fortyeightdc" {
   source = "./../../../module/gcp/cloud_build"
 
-  name            = "48dc"
+  name            = "fortyeightdc"
   description     = "Build job to deploy the 28dc application"
   git_branch_name = "main"
   git_repo_name   = "github_jagadeeswarvenkatasubbu_28dc"
   fileName        = "cloudbuild.yaml"
 }
 
-module "38dc" {
+module "thirtyeightdc" {
   source = "./../../../module/gcp/cloud_build"
 
-  name            = "38dc"
+  name            = "thirtyeightdc"
   description     = "Build job to deploy the 28dc application"
   git_branch_name = "main"
   git_repo_name   = "github_jagadeeswarvenkatasubbu_28dc"
