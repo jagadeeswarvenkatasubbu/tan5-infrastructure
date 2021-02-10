@@ -1,4 +1,4 @@
-FROM alpine/terragrunt:0.13.4
+FROM alpine/terragrunt:0.14.5
 
 RUN apk add --update --no-cache \
       bash \
