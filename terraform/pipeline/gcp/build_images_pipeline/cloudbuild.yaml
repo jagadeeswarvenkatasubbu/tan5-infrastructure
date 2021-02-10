@@ -1,6 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/tan5-management/terragrunt', 'terraform/pipeline/gcp/build_images_pipeline/terragrunt/.']
+    args: ['build', '-t', 'gcr.io/tan5-management/terragrunt:latest', '-t', 'gcr.io/tan5-management/terragrunt:$COMMIT_SHA', 'terraform/pipeline/gcp/build_images_pipeline/terragrunt/.']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/tan5-management/terragrunt:latest']
   - name: 'gcr.io/cloud-builders/docker'
