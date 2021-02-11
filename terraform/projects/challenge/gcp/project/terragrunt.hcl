@@ -5,7 +5,7 @@ locals {
 }
 
 terraform {
-  source = "./../../../module/gcp/project"
+  source = "./../../../../module/gcp/project"
 }
 
 include {
