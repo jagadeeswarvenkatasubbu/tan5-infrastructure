@@ -1,4 +1,4 @@
 steps:
   - name: 'gcr.io/tan5-management/terragrunt'
-    args: ['terragrunt', 'apply-all', '-y', '--auto-approve', '--terragrunt-working-dir', 'terraform/projects/gcp/live']
+    args: ['terragrunt', 'apply-all', '--terragrunt-non-interactive', '--terragrunt-working-dir', 'terraform/projects/gcp/live']
 
