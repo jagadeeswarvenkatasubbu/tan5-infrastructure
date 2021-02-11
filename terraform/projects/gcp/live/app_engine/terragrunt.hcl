@@ -1,5 +1,5 @@
 terraform {
-  source = "./../../../module/gcp/cloud_build"
+  source = "./../../../../module/gcp/app_engine"
 }
 
 include {
