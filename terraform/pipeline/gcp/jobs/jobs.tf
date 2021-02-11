@@ -15,8 +15,8 @@ module "challengeproject" {
   description     = "Build job to deploy the challenge project environment"
   git_branch_name = "main"
   git_repo_name   = "github_jagadeeswarvenkatasubbu_tan5-infrastructure"
-  fileName        = "terraform/projects/challenge/cloudbuild.yaml"
+  fileName        = "terraform/projects/cloudbuild.yaml"
   included_files  = [
-    "terraform/projects/challenge/**"
+    "terraform/projects/**"
   ]
 }
